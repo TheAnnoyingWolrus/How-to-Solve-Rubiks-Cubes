@@ -1,0 +1,945 @@
+.containerarea {
+    border-bottom: 3px solid lightblue;
+}
+
+.main {
+    width: 60%;
+    float: left;
+    border-top: 3px solid rgb(255, 218, 218);
+}
+
+.support {
+    width: 40%;
+    float: left;
+    background-color: rgb(255, 218, 218);
+    background-image: linear-gradient(to bottom, rgb(255, 218, 218), lightblue);
+    border-top: 3px solid rgb(255, 218, 218);
+}
+
+.PC-USERS {
+    background-color: mistyrose;
+    border: 3px solid crimson;
+    padding: 20px 40px 7px 40px;
+    margin-bottom: 1em;
+}
+
+/* \/ Media Query Thinga-Ma-Hoo Below (｡>﹏<) \/ */
+
+@media screen and (max-width: 1300) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main,
+    .support {
+        width: auto;
+        float: none;
+    }
+
+    .main {
+        padding-right: 0;
+    }
+
+    .site-nav {
+        justify-content: center;
+    }
+
+    .site-nav li {
+        width: 50%;
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .site-nav ul li p a {
+        font-family: 'HeyFun', arial;
+        padding: 20px 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        border: 3px solid lightcoral;
+        color: darkslateblue;
+        background-color: rgb(255, 240, 240);
+    }
+
+    .site-nav ul li p a:hover {
+        background-color: lightcyan;
+        border-color: cyan;
+        color: rgb(255, 255, 160);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .containerarea {
+        padding-top: 20px;
+    }
+
+      
+    .PC-USERS {
+        display: none;
+    }
+}
+
+/* /\ Media Query Thinga-Ma-Hoo Above ૮₍•᷄ ࡇ •᷅₎ა /\ */
+
+body {
+    font-family: Cursive, Arial, Helvetica, sans-serif;
+}
+
+.fix {
+    clear: both;
+}
+
+p {
+    color: navy;
+}
+
+h1 {
+    color: crimson;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav a:hover {
+    background-color: aliceblue;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: darkgoldenrod;
+}
+
+.centre {
+    text-align: center;
+}
+
+html {
+    background-image: url(images/RBKSBG\(S\).png);
+}
+
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(images/TABIP-1.jpeg) left bottom repeat-x, aliceblue url(images/TABIP-1.jpeg) left top repeat-x;
+    padding-top: 3px;
+    padding-left: 65px;
+    padding-right: 65px;
+    box-sizing: border-box;
+}
+
+.BOX-1 {
+    background: url(images/INB2.jpeg) no-repeat center center;
+    background-size: cover;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.credits {
+    color: grey;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.fix {
+    clear: both;
+}
+
+
+.apara {
+    width: 90%;
+}
+
+
+/*\/ Site Nav Area \/*/
+
+.site-nav li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.site-nav ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.site-nav {
+    margin-top: 0px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: darkred;
+    padding: 10px 20px;
+    border: 3px solid  rgb(255, 218, 218);
+    display: grid;
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+
+.site-nav a:hover {
+    background-color: rgb(255, 233, 233);
+    color: darkolivegreen;
+}
+
+.site-nav p {
+    margin: 0px;
+}
+
+
+/* Form Styles below maybe */
+
+/* Out-of-place colors are placeholder for future plans */
+
+form {
+    padding: 30px 40px;
+    background-color: lightgrey;
+    margin-bottom: 20px;
+}
+
+input, select {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+input[type="email"]:focus, input[type="telephone"]:focus, input[type="problem"]:focus {
+    border: 1px cyan;
+}
+
+input[type="submit"] {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: rgb(0, 139, 134);
+    color: white;
+    padding: 10px 0;
+    border: 1px solid rgb(82, 151, 148);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    border: 1px solid cornflowerblue;
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+}
+
+
+input[type="email"], input[type="telephone"], input[type="problem"] select {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 100%;
+    margin-bottom: 20px;
+    border: 1px solid darkgrey;
+}
+
+.hide {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+    visibility: 0%;
+}
+
+form.Contact-Support {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* Below is about table, and thats all */
+
+
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    padding-left: 100px;
+}
+
+table th {
+    text-align: left;
+    color: rgb(255, 240, 240);
+    background-color: darkred;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+table th, table td {
+    border: 1px solid darkred;
+    padding: 10px;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: rgb(255, 240, 240);
+}
+table tbody tr:nth-child(odd) {
+    background-color: rgb(255, 200, 200);
+}
+
+table th:nth-child(2), table th:nth-child(3),
+table td:nth-child(2), table td:nth-child(3) {
+    text-align: center;
+}
+
+.line {
+    width: 75%;
+}
+
+.Operator, .Opening {
+    width: 25%;
+}
+
+/* Below line 241 is Typography */
+
+h2.centre {
+    color: crimson;
+    text-align: center;
+}
+
+h1.centre {
+    margin: 0;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 250%;
+    font-style: normal;
+    letter-spacing: 4px;
+    text-shadow: 2px 10px 1px #9999;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: rgb(240, 240, 240);
+    -webkit-text-stroke: 2px black;
+}
+
+p span {
+    color: olive;
+}
+
+p span.pi {
+    color: rgb(147, 178, 252);
+}
+
+.apara-2 {
+    border-top: 3px solid rgb(255, 218, 218);
+}
+
+header p {
+    font-size: 100%;
+    margin-top: 10px;
+    text-align: justify;
+    color: olivedrab;
+    text-indent: 25px;
+}
+
+header p a {
+    text-decoration: none;
+}
+
+.p1 p.pi {
+    margin-top: 10px;
+    text-indent: 25px;
+    color: rgb(74, 106, 174);
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: darkslategrey;
+}
+
+.ART-A {
+    text-indent: 10px;
+}
+
+
+
+/* \/ Below is about slideshow (Formerly img-banner and captions) (๑ᵔ ᗜ ᵔ๑) \/ */
+
+.imgbanner {
+    position: relative;
+}
+
+.imgbanner img {
+    display: block;
+}
+
+.cycle-slideshow {
+    margin-bottom: 30px;
+    width: 100%;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+.slide {
+    width: 70%;
+    position: relative;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(242, 221, 126, 0.5);
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.25px;
+    -webkit-text-stroke-color: aliceblue;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.slide-text h3 {
+    margin: 0;
+}
+
+.slide-text p {
+    color: white;
+    -webkit-text-stroke: 0.6275px;
+    -webkit-text-stroke-color: black;
+}
+
+.cycle-prev, .cycle-next {
+    font-family: cursive;
+    position: absolute;
+    width: 20%;
+    top: 30%;
+    background-color: rgb(242, 211, 111);
+    color: rgb(0, 0, 0);
+    padding: 1px 10px;
+    display: block;
+    cursor: pointer;
+    font-size: 130%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.cycle-next {
+    right: 0;
+}
+
+.cycle-slideshow:hover .cycle-prev,
+.cycle-slideshow:hover .cycle-next {
+    opacity: 1;
+}
+
+
+
+/*  BELOW THIS LINE IS CSS FOR "Contact Support" and "Moveset" WEBPAGES  */
+
+
+
+.CM-Container {
+    max-width: 940px;
+    padding-left: 65px;
+    padding-right: 65px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CM-ContainerArea {
+    background: url(images/INB2-Green\(Vertical\).png);
+}
+
+.CM-Container h2 {
+    font-size: 200%;
+    color: whitesmoke;
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+}
+
+.CM-site-nav {
+    float: left;
+    margin-right: 10px;
+}
+
+.CM-site-nav ul li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.CM-br-line {
+    border-top: 3px;
+    border: 1.5px solid aquamarine;
+}
+
+.CM-nav-boxes {
+    padding: 15px;
+    border: 3px solid aquamarine;
+    color: maroon;
+    text-decoration: none;
+    background-color: rgba(128, 255, 238, 0.5);
+    box-sizing: border-box;
+    border-top: 3px;
+    margin-top: 0px;
+}
+
+.CM-nav-boxes:hover {
+    border-color: lightskyblue;
+    color: azure;
+    background-color: rgba(223, 255, 251, 0.5);
+}
+
+.CM-ContainerArea .CM-site-nav ul {
+    margin: 0%;
+}
+
+.CM-Container .centre {
+    text-align: center;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+.Cubing-Notation img {
+    border-top: 5px;
+}
+
+#CM-PL-1 {
+    margin-left: 25px;
+}
+
+.CM-ContainerArea .left {
+    width: 49.825%;
+    float: left;
+    padding: none;
+    border: 1.5px solid aquamarine;
+    border-left: none;
+    border-bottom: none;
+}
+
+.CM-ContainerArea .right {
+    width: 49.825%;
+    float: right;
+    padding: none;
+    border: 1.5px solid aquamarine;
+    border-right: none;
+    border-bottom: none;
+}
+
+#CM-H3-CN {
+    color: aqua;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(0, 111, 74);
+    font-size: 175%;
+}
+
+#DISCLAIMER-CM-MOVESETCHART {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: red;
+}
+
+#CM-TITLE-ACOERT {
+    text-align: center;
+    color: aliceblue;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(0, 111, 74);
+    font-size: 305%;
+}
+
+.CM-TEXT-CONTAINER {
+    padding-left: 10%;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 10%;
+    background-repeat: no-repeat;
+    text-indent: 15px;
+}
+
+#CM-A1-E-BR-LINE {
+    padding-bottom: 1;
+    border: 3px solid gray;
+    border-top: 0;
+    border-bottom: 3px solid gray;
+    margin-top: 0;
+    background-color: whitesmoke;
+}
+
+#CM-A1-M-BR-LINE {
+    border: 3px solid gray;
+    border-top: 0;
+    border-bottom: 0;
+    background-color: whitesmoke;
+}
+
+#CM-A1-B-BR-LINE {
+    border: 3px solid gray;
+    border-bottom: 0;
+    border-top: 0;
+    background-color: whitesmoke;
+}
+
+#CM-A2-BR-LINE {
+    border: 3px solid gray;
+    border-top: 0;
+    background-color: whitesmoke;
+}
+
+#CM-A3-BR-LINE {
+    border: 3px solid gray;
+    border-top: 0;
+    background-color: whitesmoke;
+    margin-bottom: 100px;
+}
+
+.CM-AlG-IMG {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 45px;
+    margin-right: auto;
+}
+
+.Cont-Supp-Main-Title {
+    text-align: center;
+    font-size: 250%;
+    color: aquamarine;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(0, 111, 74);
+    text-shadow: 3px solid rgba(128, 255, 238, 0.5);
+}
+
+/* Below is Mobile Support for "Contact-Support" and "Moveset" webpages */
+
+@media screen and (max-width: 1300) {
+
+    .CM-Container {
+        max-width: 1300px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .CM-Container {
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-left: 20px;
+        margin-right: auto;
+    }
+
+    .CM-Container .CM-ContainerArea .left, .CM-Container .CM-ContainerArea .right {
+        width: auto;
+        float: none;
+        border: 0;
+    }
+
+    .CM-Container #DISCLAIMER-CM-MOVESETCHART, .CM-Container .CM-ContainerArea #CM-PL-1 {
+        margin-left: 140px;
+    }
+
+    .left {
+        padding-right: 0;
+    }
+
+    .CM-site-nav {
+        justify-content: center;
+        display: grid;
+        margin-bottom: 50px;
+    }
+
+    .CM-site-nav ul li {
+        width: 175px;
+        margin-right: 5px;
+        align-items: center;
+        display: grid;
+    }
+
+    .CM-site-nav ul li a {
+        font-family: 'HeyFun', cursive, arial;
+        padding: 20px 0;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        border: 3px solid aquamarine;
+    }
+
+    .CM-site-nav ul {
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+
+    #CM-TITLE-ACOERT {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #CM-IMG-MVSHT-MOBILE {
+        width: 500px;
+        height: 375px;
+        margin-left: 15px;
+        margin-right: auto;
+    }
+
+    .CM-AlG-IMG {
+        width: 435px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    div.CM-Container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    div.CM-ContainerArea {
+        padding-top: 20px;
+    }
+}
+
+
+
+
+/*  BELOW THIS LINE IS CSS FOR "Tutorial" WEBPAGE */
+
+
+
+
+
+.T-Container {
+    max-width: 940px;
+    padding-left: 65px;
+    padding-right: 65px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.T-ContainerArea {
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), skyblue, green, rgb(149, 255, 0), yellow, orange, red, red);
+}
+
+.Main-Title {
+    font-size: 250%;
+    text-align: center;
+    color: lightcyan;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.BTHP-Box {
+    padding: 12px;
+    border: 3px solid skyblue;
+    color: maroon;
+    text-decoration: none;
+    background-color: aliceblue;
+    box-sizing: border-box;
+}
+
+.BTHP-Box:hover {
+    border: 3px solid lightblue;
+    color: aquamarine;
+    background-color: lightskyblue;
+    cursor: pointer;
+}
+
+.T-Container h2 {
+    font-size: 200%;
+    color: whitesmoke;
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+}
+
+.T-Container p {
+    margin-left: 25px;
+    margin-right: 25px;
+    color: aliceblue;
+    text-indent: 10px;
+}
+
+.br-line {
+    max-width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-top: 3px;
+    border: 1.5px solid gray;
+}
+
+.T-ContainerArea .left {
+    width: 50%;
+    float: left;
+}
+
+.T-ContainerArea .right {
+    width: 50%;
+    float: left;
+}
+
+.T-Site-Nav ul li{
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.T-Site-Nav, .T-Site-Nav a {
+    margin-top: 0px;
+    padding: 10px 20px;
+    display: block;
+}
+
+.T-Container .left img {
+    margin-left: 40px;
+}
+
+.T-Container #YELLOWCROSSTRICOLLAGE {
+    padding-left: 14.5%;
+    padding-right: 14.5%;
+}
+
+#YELLOWCROSSPARAGRAPH1 {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: lightgoldenrodyellow;
+    border: 3px solid gray;
+}
+
+.T-Container a {
+    text-decoration: none;
+}
+
+.T-Container .centre {
+    max-width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#STEP4IMAGEAAA {
+    max-width: 80%;;
+    margin-left: 20%;
+}
+
+#FINALVIDEO {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#FINALAUDIO {
+    margin-left: 40px;
+}
+
+.T-Container p {
+    color: rgb(37, 37, 37);
+    padding: 3.5px;
+}
+
+#T-MT-FP-A-1 {
+    background-color: whitesmoke;
+    border: 3px solid lightslategray;
+    padding: 10px;
+}
+
+#T-L-WHTCRS-BOTTOM {
+    background-color: lightblue;
+    border: 3px solid gray;
+    border-top: 0;
+    margin-top: 0;
+}
+
+#T-L-WHTCRS-TOP {
+    background-color: lightblue;
+    border: 3px solid gray;
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+#T-ATCWE-TOP {
+    background-color: lightgreen;
+    border: 3px solid gray;
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+#T-ATCWE-MIDDLE {
+    background-color: lightgreen;
+    border: 3px solid gray;
+    border-top: 0;
+    border-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#T-ATCWE-BOTTOM {
+    background-color: lightgreen;
+    border: 3px solid gray;
+    padding-top: 3px;
+    border-top: 0;
+    margin-top: 0;
+}
+
+#ATYE-1-B {
+    background-color: rgb(255, 213, 136);
+    border: 3px solid gray;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+#ATYE-1-M {
+    background-color: rgb(255, 213, 136);
+    border: 3px solid gray;
+    margin-top: 0;
+    border-top: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+
+#ATYE-1-E {
+    background-color: rgb(255, 213, 136);
+    border: 3px solid gray;
+    margin-top: 0;
+    border-top: 0;
+}
+
+#FP1 {
+    background-color: lightcoral;
+    border: 3px solid gray;
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding: 5px;
+}
+
+#FP2 {
+    background-color: lightcoral;
+    border: 3px solid gray;
+    margin-top: 0;
+    border-top: 0;
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .T-Container {
+        max-width: 1300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    div.T-Container div.Step-1 div.left,
+    div.T-Container div.Step-1 div.right {
+        width: auto;
+        float: none;
+        border: 0;
+    }
+
+    .T-Container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
